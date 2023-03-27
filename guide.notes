@@ -1,18 +1,72 @@
 # HOW TO CREATE A REACT APP
 
+
+Project Folder Structure:
+
 [ ] Install NPM and VsCode
 [ ] Run the command exactly as below
 npx create-react-app .
 [ ] Delete everything from the folder public and src
 [ ] Create the paste called assets inside src, where you are going to store all the images that you need.
-[ ] Create the file index.html inside the public folder.
+[ ] Create the file index.html inside the folder called public
 [ ] type the word "doc" then press tab to get a template. 
 Inside the body, insert  <div id="root"></div>, thats where the project is going to live.
 [ ] Inside the folder src, create another folder called components, thats where the components are going to live.
-[ ] Inside the folder src, create the file index.js, this is where we are going to link the app to the html file.
+[ ] Inside the folder src, create the file index.js, this is where we are going to link the app to the html file. 
+[ ] Inside index.js, type:
+
+
+import ReactDOM from 'react-dom/client'
+import App from './App';
+import './index.css';
+
+
+const root = ReactDOM.createRoot(document.querySelector('#root'));
+root.render(<App/>);
+
+//O comando const root = ReactDOM.createRoot(document.querySelector('#root')) é usado para criar uma raiz de renderização para um aplicativo React e indicar onde o componente React deve ser renderizado. A raiz de renderização é uma nova API do React que permite renderizar componentes React de forma mais rápida e eficiente. O elemento DOM selecionado com document.querySelector('#root') é onde o componente será renderizado.
+//O comando import ReactDOM from 'react-dom/client' é usado para importar a biblioteca ReactDOM em um aplicativo React. Ele é usado para renderizar componentes React em um navegador da web.
+//O comando root.render(<App/>) serve para renderizar o componente principal do aplicativo React dentro do elemento selecionado, e assim exibir o conteúdo do aplicativo na página web.
+
 [ ] Inside src folder, create the file App.jsx.
+
+
+Inside this file, type "rafce" without the quotation mark then press tab, this is going to be the main app, you can delete the line 1.
+
 [ ] Inside src folder, Create the file index.css
 [ ] Inside src folder, create the folder sections.
 [ ] Inside src folder, Create the folder theme
 [ ] Inside src folder, Create the folder context
+[ ] Inside the folder sections, create the folder with the component name, then inside that folder, create the css file with the component name and create the jsx file, for example, for the header, create a folder called header, and inside that folder create the file header.css and Header.jsx. do That for every component needed.
+[ ] Inside every jsx file created inside section, import the css, export the component and create the const. Use this example for the footer component:
+
+import './footer.css'
+
+const Footer = () => {
+  return (
+    <section id="footer"><h2>Footer</h2></section>
+  )
+}
+
+export default Footer
+
+Another example, for ther navbar:
+
+import './navbar.css'
+
+const Navbar = () => {
+  return (
+    <nav><h2>Navbar</h2></nav>
+  )
+}
+
+export default Navbar
+
+
+
+
+
+
+
+
 
