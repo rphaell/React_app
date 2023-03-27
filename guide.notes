@@ -1,0 +1,18 @@
+# HOW TO CREATE A REACT APP
+
+[ ] Install NPM and VsCode
+[ ] Run the command exactly as below
+npx create-react-app .
+[ ] Delete everything from the folder public and src
+[ ] Create the paste called assets inside src, where you are going to store all the images that you need.
+[ ] Create the file index.html inside the public folder.
+[ ] type the word "doc" then press tab to get a template. 
+Inside the body, insert  <div id="root"></div>, thats where the project is going to live.
+[ ] Inside the folder src, create another folder called components, thats where the components are going to live.
+[ ] Inside the folder src, create the file index.js, this is where we are going to link the app to the html file.
+[ ] Inside src folder, create the file App.jsx.
+[ ] Inside src folder, Create the file index.css
+[ ] Inside src folder, create the folder sections.
+[ ] Inside src folder, Create the folder theme
+[ ] Inside src folder, Create the folder context
+
