@@ -1,7 +1,8 @@
-import Logo from '../../assets/logo.jpg'
+import Logo from '../../assets/werewolf.png'
 import data from './data'
 import './navbar.css'
-import {MdDarkMode} from 'react-icons/md'
+import Wallet from '../../assets/metamask.png'
+import {GiWerewolf} from 'react-icons/gi'
 
 
 const Navbar = () => {
@@ -16,7 +17,7 @@ const Navbar = () => {
             data.map(item => <li key={item.id}><a href={item.link}>{item.title}</a></li>)
           }
         </ul>
-        <button id = 'theme__icon'><MdDarkMode/></button>
+        <a href=""><img id='wallet' src={Wallet} alt="" /></a>
       </div>
     </nav>
   )

@@ -1,8 +1,8 @@
 import Navbar from './sections/navbar/Navbar';
 import Header from './sections/header/Header';
-import About from './sections/about/About';
-import Services from './sections/services/Services';
-import Portfolio from './sections/portfolio/Portfolio';
+import Trade from './sections/trade/Trade';
+import Staking from './sections/staking/Staking';
+import Whitepaper from './sections/whitepaper/Whitepaper';
 import Testimonials from './sections/testimonials/Testimonials';
 import FAQ from './sections/FAQ/FAQ';
 import Contact from './sections/contact/Contact';
@@ -15,9 +15,9 @@ const App = () => {
     <main>
       <Navbar />
       <Header />
-      <About />
-      <Services />
-      <Portfolio />
+      <Trade />
+      <Staking />
+      <Whitepaper />
       <Testimonials />
       <FAQ />
       <Contact />

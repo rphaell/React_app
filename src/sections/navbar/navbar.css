@@ -3,7 +3,7 @@ nav {
     height: 5rem;
     display: grid;
     place-items: center;  
-    background: var(--color-primary);  
+    background: var(--color-black);  
     position: fixed;
     top: 0;
     left: 0;
@@ -19,8 +19,8 @@ nav {
 }
 
 .nav__logo {
-    width: 2.5rem;
-    border-radius: 50%;
+    width: 3.5rem;
+    /* border-radius: 50%; */
     overflow: hidden;
     
 }
@@ -28,20 +28,18 @@ nav {
 .nav__menu {
     display: flex;
     gap:3.5rem;
-    /* font-family: 'MedievalSharp', cursive; */
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.5rem;
+    /* font-weight: bolder; */
 
-}
-
-#theme__icon {
-    background: transparent;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
 }
 
 #wallet {
+    display: inline-block;
+    background: transparent;
     height: 3rem;
     width: 3rem;
+    cursor: pointer;
 }
 
 /* ESCONDER NAV MENU EM TABLES E CELULAR */
